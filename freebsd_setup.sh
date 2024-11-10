@@ -7,7 +7,7 @@ mkdir /mnt/usb
 pw groupmod video -m mxvish
 sysrc kld_list+=i915kms
 
-pkg install -y dmenu drm-kmod git i3 i3lock i3status neofetch vim xf86-video-intel xfce4-terminal xorg
+pkg install -y dmenu drm-kmod git i3 i3lock i3status linux-chrome neofetch vim xf86-video-intel xfce4-terminal xorg
 echo 'exec i3' >  /home/mxvish/.xinitrc
 
 echo 'keymap="us.pc-ctrl"
