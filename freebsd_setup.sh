@@ -13,3 +13,6 @@ echo 'exec i3' >  /home/mxvish/.xinitrc
 echo 'keymap="us.pc-ctrl"
 linux_enable="YES"' >> /etc/rc.conf
 #i3-config-wizard #run this in $USER not in su
+
+curl -s https://raw.githubusercontent.com/mxvish/i3status/main/i3status.conf > /etc/i3status.conf
+#add "i3status -c /etc/i3status.conf" in .config/i3/config
