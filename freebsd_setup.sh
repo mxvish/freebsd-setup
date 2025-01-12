@@ -10,7 +10,7 @@ sysrc kld_list+=i915kms
 pkg update
 pkg upgrade -y
 
-pkg install -y dmenu dmenu-wayland drm-kmod firefox git i3 i3lock i3status neofetch sway vim wayland xf86-video-intel xfce4-terminal xorg
+pkg install -y cmatrix dmenu dmenu-wayland drm-kmod firefox git i3 i3lock i3status neofetch sway vim wayland xf86-video-intel xfce4-terminal xorg
 echo 'exec i3' >  /home/mxvish/.xinitrc
 
 echo 'keymap="us.pc-ctrl"
