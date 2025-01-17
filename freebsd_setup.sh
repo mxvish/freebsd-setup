@@ -22,4 +22,4 @@ service seatd start
 curl -s https://raw.githubusercontent.com/mxvish/i3status/main/i3status.conf > /etc/i3status.conf
 #add "i3status -c /etc/i3status.conf" in .config/i3/config
 
-curl -s https://raw.githubusercontent.com/mxvish/vimrc/main/vimrc > /home/$USER/.vimrc
+curl -s https://raw.githubusercontent.com/mxvish/vimrc/main/vimrc > /home/mxvish/.vimrc
