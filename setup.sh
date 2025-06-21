@@ -91,3 +91,28 @@ touch /root/.hushlogin
 #mixer vol=+5%
 
 #check how mac is configured(e.g. sysctl) and apply it on fbsd?
+
+#
+##settings for installing on virtualbox
+#partitioning -> auto(ufs)
+#	entire disk
+#	partition scheme -> gpt
+#	finish
+#	commit
+#
+#pkg install -y virtualbox-ose-additions
+#echo 'vboxguest_enable=YES
+#vboxservice_enable=YES
+#vboxsf_enable=YES' >> /etc/rc.conf
+#reboot
+#
+#mkdir /mnt/oshiken
+#mount -t vboxvfs oshiken /mnt/oshiken
+#
+#vim ~/.xinitrc
+##exec sway
+#startx	#not sway
+#
+#mkdir -p ~/.config/sway
+#cp /usr/local/etc/sway/config ~/.config/sway/
+#chown mxvish:mxvish ~/.config/sway/config
