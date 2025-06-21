@@ -18,6 +18,7 @@ curl -s https://raw.githubusercontent.com/mxvish/i3config/main/i3status.conf > /
 #add "i3status -c /etc/i3status.conf" in .config/i3/config
 
 curl -s https://raw.githubusercontent.com/mxvish/vimrc/main/vimrc > /home/mxvish/.vimrc
+curl -s https://raw.githubusercontent.com/mxvish/vimrc/main/vimrc > /root/.vimrc
 
 CURRENT_USER="mxvish"
 touch /home/$CURRENT_USER/.hushlogin
