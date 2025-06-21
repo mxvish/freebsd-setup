@@ -31,7 +31,6 @@ touch /root/.hushlogin
 #distribution select
 #    lib32
 #    ports
-#    src
 #partitioning -> manual
 #    type    freebsd-swap
 #    size    4g
