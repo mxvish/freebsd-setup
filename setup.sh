@@ -8,8 +8,11 @@ pkg upgrade -y
 pkg install -y cmatrix dmenu dmenu-wayland drm-kmod firefox git i3 i3lock i3status neofetch sway vim wayland xf86-video-intel xfce4-terminal xorg
 echo 'exec i3' >  /home/mxvish/.xinitrc
 
+echo 'boot_mute="YES"' >> /boot/loader.conf
+
 echo 'keymap="us.pc-ctrl"
 linux_enable="YES"
+rc_startmsgs="NO"
 seatd_enable="YES"' >> /etc/rc.conf
 #i3-config-wizard #run this in $USER not in su
 service seatd start
