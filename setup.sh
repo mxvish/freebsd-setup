@@ -33,7 +33,6 @@ touch /root/.hushlogin
 #continue with default keymap
 #set hostname
 #distribution select
-#    lib32
 #    ports
 #partitioning -> manual
 #    type    freebsd-swap
