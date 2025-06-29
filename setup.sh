@@ -28,6 +28,13 @@ curl -s https://raw.githubusercontent.com/mxvish/vimrc/main/vimrc > /root/.vimrc
 touch /home/$CURRENT_USER/.hushlogin
 touch /root/.hushlogin
 
+mkdir -p /home/$CURRENT_USER/.config/sway
+cp /usr/local/etc/sway/config /home/$CURRENT_USER/.config/sway
+chown $CURRENT_USER:$CURRENT_USER /home/$CURRENT_USER/.config/sway/config
+
+sed -i '' 's/foot/xfce4-terminal/g' /home/$CURRENT_USER/.config/sway/config
+sed -i '' 's/wmenu-run/dmenu_run/g' /home/$CURRENT_USER/.config/sway/config
+
 #-disc.iso
 #1. Boot Multi User
 #Install
