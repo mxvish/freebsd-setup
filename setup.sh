@@ -1,3 +1,5 @@
+CURRENT_USER="mxvish"
+
 mkdir /mnt/usb
 pw groupmod video -m mxvish
 sysrc kld_list+=i915kms
@@ -6,7 +8,7 @@ pkg update
 pkg upgrade -y
 
 pkg install -y cmatrix dmenu dmenu-wayland drm-kmod firefox git i3 i3lock i3status neofetch sway vim wayland xf86-video-intel xfce4-terminal xorg
-echo 'exec i3' >  /home/mxvish/.xinitrc
+echo 'exec i3' >  /home/$CURRENT_USER/.xinitrc
 
 echo 'boot_mute="YES"' >> /boot/loader.conf
 
@@ -20,10 +22,9 @@ service seatd start
 curl -s https://raw.githubusercontent.com/mxvish/i3config/main/i3status.conf > /etc/i3status.conf
 #add "i3status -c /etc/i3status.conf" in .config/i3/config
 
-curl -s https://raw.githubusercontent.com/mxvish/vimrc/main/vimrc > /home/mxvish/.vimrc
+curl -s https://raw.githubusercontent.com/mxvish/vimrc/main/vimrc > /home/$CURRENT_USER/.vimrc
 curl -s https://raw.githubusercontent.com/mxvish/vimrc/main/vimrc > /root/.vimrc
 
-CURRENT_USER="mxvish"
 touch /home/$CURRENT_USER/.hushlogin
 touch /root/.hushlogin
 
