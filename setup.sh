@@ -8,7 +8,7 @@ pkg update
 pkg upgrade -y
 
 pkg install -y cmatrix dmenu dmenu-wayland drm-kmod emacs-nox firefox git i3 i3lock i3status neofetch sway vim wayland xf86-video-intel xfce4-terminal xorg
-echo 'exec i3' >  /home/$CURRENT_USER/.xinitrc
+#echo 'exec i3' >  /home/$CURRENT_USER/.xinitrc
 
 echo 'boot_mute="YES"' >> /boot/loader.conf
 
