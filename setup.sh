@@ -41,7 +41,7 @@ sed -i '' 's/wmenu-run/dmenu_run/g' /home/$CURRENT_USER/.config/sway/config
 #continue with default keymap
 #set hostname
 #distribution select
-#    ports
+#    none or ports
 #partitioning -> manual
 #    type    freebsd-swap
 #    size    4g
