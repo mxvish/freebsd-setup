@@ -1,5 +1,3 @@
-CURRENT_USER="mxvish"
-
 mkdir /mnt/usb
 pw groupmod video -m mxvish
 sysrc kld_list+=i915kms
@@ -8,7 +6,7 @@ pkg update
 pkg upgrade -y
 
 pkg install -y cmatrix dmenu dmenu-wayland drm-kmod emacs-nox firefox git grim i3 i3lock i3status nasm neofetch qemu sway tree vim wayland xf86-video-intel xfce4-terminal xorg
-#echo 'exec i3' >  /home/$CURRENT_USER/.xinitrc
+#echo 'exec i3' >  /home/$(hostname)/.xinitrc
 
 echo 'boot_mute="YES"' >> /boot/loader.conf
 
@@ -22,18 +20,18 @@ service seatd start
 curl -s https://raw.githubusercontent.com/mxvish/i3config/main/i3status.conf > /etc/i3status.conf
 #add "status_command i3status -c /etc/i3status.conf" in .config/i3/config
 
-curl -s https://raw.githubusercontent.com/mxvish/vimrc/main/vimrc > /home/$CURRENT_USER/.vimrc
+curl -s https://raw.githubusercontent.com/mxvish/vimrc/main/vimrc > /home/$(hostname)/.vimrc
 curl -s https://raw.githubusercontent.com/mxvish/vimrc/main/vimrc > /root/.vimrc
 
-touch /home/$CURRENT_USER/.hushlogin
+touch /home/$(hostname)/.hushlogin
 touch /root/.hushlogin
 
-mkdir -p /home/$CURRENT_USER/.config/sway
-cp /usr/local/etc/sway/config /home/$CURRENT_USER/.config/sway
-chown $CURRENT_USER:$CURRENT_USER /home/$CURRENT_USER/.config/sway/config
+mkdir -p /home/$(hostname)/.config/sway
+cp /usr/local/etc/sway/config /home/$(hostname)/.config/sway
+chown $(hostname):$(hostname) /home/$(hostname)/.config/sway/config
 
-sed -i '' 's/foot/xfce4-terminal/g' /home/$CURRENT_USER/.config/sway/config
-sed -i '' 's/wmenu-run/dmenu_run/g' /home/$CURRENT_USER/.config/sway/config
+sed -i '' 's/foot/xfce4-terminal/g' /home/$(hostname)/.config/sway/config
+sed -i '' 's/wmenu-run/dmenu_run/g' /home/$(hostname)/.config/sway/config
 
 #-disc.iso
 #1. Boot Multi User
