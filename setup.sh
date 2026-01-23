@@ -5,13 +5,12 @@ sysrc kld_list+=i915kms
 pkg update
 pkg upgrade -y
 
-pkg install -y btop cmatrix dmenu dmenu-wayland drm-kmod emacs-nox fastfetch firefox git grim i3 i3lock i3status nasm qemu sway tree vim wayland xf86-video-intel xfce4-terminal xorg
+pkg install -y btop cmatrix dmenu dmenu-wayland drm-kmod emacs-nox fastfetch git grim i3 i3lock i3status nasm qemu sway tree vim wayland xf86-video-intel xfce4-terminal xorg
 #echo 'exec i3' >  /home/$(hostname)/.xinitrc
 
 echo 'boot_mute="YES"' >> /boot/loader.conf
 
 echo 'keymap="us.pc-ctrl"
-linux_enable="YES"
 rc_startmsgs="NO"
 seatd_enable="YES"' >> /etc/rc.conf
 #i3-config-wizard #run this in $USER not in su
