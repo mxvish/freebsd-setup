@@ -33,12 +33,14 @@ sed -i '' 's/foot/xfce4-terminal/g' /home/$(hostname)/.config/sway/config
 sed -i '' 's/wmenu-run/dmenu_run/g' /home/$(hostname)/.config/sway/config
 
 #-disc.iso
-#1. Boot Multi User
+#1. Boot Installer
 #Install
 #continue with default keymap
 #set hostname
+#select installation type
+#  distribution sets
 #distribution select
-#    none or ports
+#    none
 #partitioning -> manual
 #    type    freebsd-swap
 #    size    4g
