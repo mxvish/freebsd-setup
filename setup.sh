@@ -42,19 +42,16 @@ sed -i '' 's/wmenu-run/dmenu_run/g' /home/$(hostname)/.config/sway/config
 #distribution select
 #    none
 #partitioning -> manual
-#    type    freebsd-swap
-#    size    4g
-#    mountpoint swap
-#    label   swap
 #    type        freebsd-ufs
 #    size        (your preference)
 #    mountpoint  /
 #    label   root
 #    #created automatically when you create root partition
 #    #type    efi
-#    #size    512m
+#    #size    (no need to change)
 #    #mountpoint /boot/efi
-#    #label   boot
+#    #label   (no need to change)
+      #finish -> commit
 #network installation -> iwlwifi
 #regdomain/country -> no
 #network configuration -> iwlwifi
@@ -63,6 +60,8 @@ sed -i '' 's/wmenu-run/dmenu_run/g' /home/$(hostname)/.config/sway/config
 #configure ipv6 for this interface -> n
 #resolve configuration -> ok
 #is cmos clock set to UTC? -> yes
+#mirror selection -> ok
+#password
 #select timezone
 #system configuration
 #    check dumpdev
@@ -73,7 +72,7 @@ sed -i '' 's/wmenu-run/dmenu_run/g' /home/$(hostname)/.config/sway/config
 #add user accounts -> yes
 #    invite user into other groups: wheel
 #    leave others empty for default    
-#final configuration -> exit
+#final configuration -> finish
 #manual configuration -> no    
 #complete -> reboot
 
