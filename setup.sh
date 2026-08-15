@@ -1,3 +1,12 @@
+ifconfig wlan0 create wlandev iwlwifi0
+ifconfig wlan0 up
+ifconfig wlan0 scan
+wpa_passphrase '$SSID' > /etc/wpa_supplicant.conf
+vi /etc/wpa_supplicant.conf
+#delete psk before hashed
+wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant.conf
+dhclient wlan0
+
 mkdir /mnt/usb
 pw groupmod video -m mxvish
 sysrc kld_list+=i915kms
@@ -10,7 +19,9 @@ pkg install -y btop cmatrix dmenu dmenu-wayland drm-kmod emacs-nox fastfetch git
 
 echo 'boot_mute="YES"' >> /boot/loader.conf
 
-echo 'keymap="us.pc-ctrl"
+echo 'wlans_iwlwifi0="wlan0"
+ifconfig_wlan0="WPA DHCP"
+keymap="us.pc-ctrl"
 rc_startmsgs="NO"
 seatd_enable="YES"' >> /etc/rc.conf
 #i3-config-wizard #run this in $USER not in su
