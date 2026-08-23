@@ -14,7 +14,7 @@ sysrc kld_list+=i915kms
 pkg update
 pkg upgrade -y
 
-pkg install -y btop cmatrix dmenu dmenu-wayland drm-kmod emacs-nox fastfetch git grim i3 i3lock i3status nasm qemu sway tree vim wayland xf86-video-intel xf86-video-scfb xfce4-terminal xorg
+pkg install -y btop cmatrix dmenu dmenu-wayland drm-kmod emacs-nox fastfetch git i3 i3lock i3status nasm qemu tree vim xf86-video-intel xf86-video-scfb xfce4-terminal xorg
 #echo 'exec i3' >  /home/$(hostname)/.xinitrc
 
 echo 'boot_mute="YES"' >> /boot/loader.conf
@@ -35,13 +35,6 @@ curl -s https://raw.githubusercontent.com/mxvish/vimrc/main/vimrc > /root/.vimrc
 
 touch /home/$(hostname)/.hushlogin
 touch /root/.hushlogin
-
-mkdir -p /home/$(hostname)/.config/sway
-cp /usr/local/etc/sway/config /home/$(hostname)/.config/sway
-chown $(hostname):$(hostname) /home/$(hostname)/.config/sway/config
-
-sed -i '' 's/foot/xfce4-terminal/g' /home/$(hostname)/.config/sway/config
-sed -i '' 's/wmenu-run/dmenu_run/g' /home/$(hostname)/.config/sway/config
 
 #-disc.iso
 #1. Boot Installer
