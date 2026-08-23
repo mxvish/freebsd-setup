@@ -35,6 +35,11 @@ curl -s https://raw.githubusercontent.com/mxvish/vimrc/main/vimrc > /root/.vimrc
 touch /home/$(hostname)/.hushlogin
 touch /root/.hushlogin
 
+ echo 'Section "Device"
+     Identifier    "Card0"
+     Driver        "scfb"
+ EndSection' > /usr/local/etc/X11/xorg.conf.d/driver-scfb.conf 
+ 
 #-disc.iso
 #1. Boot Installer
 #Install
