@@ -9,7 +9,6 @@ dhclient wlan0
 
 mkdir /mnt/usb
 pw groupmod video -m mxvish
-sysrc kld_list+=i915kms
 
 pkg update
 pkg upgrade -y
