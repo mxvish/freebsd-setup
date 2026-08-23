@@ -1,11 +1,11 @@
-ifconfig wlan0 create wlandev iwlwifi0
-ifconfig wlan0 up
-ifconfig wlan0 scan
-wpa_passphrase '$SSID' > /etc/wpa_supplicant.conf
-vi /etc/wpa_supplicant.conf
-#delete psk before hashed
-wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant.conf
-dhclient wlan0
+#ifconfig wlan0 create wlandev iwlwifi0
+#ifconfig wlan0 up
+#ifconfig wlan0 scan
+#wpa_passphrase '$SSID' > /etc/wpa_supplicant.conf
+#vi /etc/wpa_supplicant.conf
+##delete psk before hashed
+#wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant.conf
+#dhclient wlan0
 
 mkdir /mnt/usb
 pw groupmod video -m mxvish
