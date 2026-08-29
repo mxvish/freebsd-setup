@@ -39,7 +39,12 @@ touch /root/.hushlogin
      Identifier    "Card0"
      Driver        "scfb"
  EndSection' > /usr/local/etc/X11/xorg.conf.d/driver-scfb.conf 
- 
+
+git clone https://github.com/mxvish/i3config.git
+cd i3config
+mv config /home/$(hostname)/.config/i3/
+#i3status?
+
 #-disc.iso
 #1. Boot Installer
 #Install
