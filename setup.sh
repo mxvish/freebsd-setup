@@ -45,6 +45,10 @@ cd i3config
 mv config /home/$(hostname)/.config/i3/
 #i3status?
 
+git clone https://github.com/mxvish/dotfiles
+cd dotfiles
+mv 00-keyboard.conf /usr/local/etc/X11/xorg.conf.d/
+
 #-disc.iso
 #1. Boot Installer
 #Install
