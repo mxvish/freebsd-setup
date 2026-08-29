@@ -13,7 +13,7 @@ pw groupmod video -m mxvish
 pkg update
 pkg upgrade -y
 
-pkg install -y btop cmatrix dmenu drm-kmod emacs-nox fastfetch firefox git i3 i3lock i3status ja-font-ipa nasm qemu tree vim xf86-video-intel xf86-video-scfb xfce4-terminal xorg
+pkg install -y btop cmatrix dmenu drm-kmod emacs-nox fastfetch firefox git i3 i3lock i3status ja-font-ipa nasm py312-ranger qemu tree vim xf86-video-intel xf86-video-scfb xfce4-terminal xorg
 #echo 'exec i3' >  /home/$(hostname)/.xinitrc
 
 echo 'boot_mute="YES"' >> /boot/loader.conf
