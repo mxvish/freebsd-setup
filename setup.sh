@@ -28,6 +28,9 @@ ifconfig_wlan0="WPA DHCP"
 keymap="us.pc-ctrl"
 rc_startmsgs="NO"
 seatd_enable="YES"' >> /etc/rc.conf
+
+echo 'hw.snd.default_unit=2' >> /etc/sysctl.conf
+
 #i3-config-wizard #run this in $USER not in su
 service seatd start
 
