@@ -13,7 +13,7 @@ pw groupmod video -m mxvish
 pkg update
 pkg upgrade -y
 
-pkg install -y btop cmatrix dmenu drm-kmod emacs-nox fastfetch fcitx5 fcitx5-configtool fcitx5-gtk3 firefox git i3 i3lock i3status ja-fcitx5-skk ja-font-ipa nasm py312-ranger qemu tree vim xf86-video-intel xf86-video-scfb xfce4-terminal xorg
+pkg install -y btop cmatrix dmenu drm-kmod emacs-nox fastfetch fcitx5 fcitx5-configtool fcitx5-gtk3 firefox git i3 i3lock i3status ja-fcitx5-skk ja-font-ipa nasm py312-ranger qemu tree vim xf86-video-intel xf86-video-scfb xclip xfce4-terminal xorg
 
 echo 'export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
