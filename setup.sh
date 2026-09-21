@@ -55,6 +55,7 @@ mv config /home/$(hostname)/.config/i3/
 
 git clone https://github.com/mxvish/dotfiles
 cd dotfiles
+sh setup.sh
 mv 00-keyboard.conf /usr/local/etc/X11/xorg.conf.d/
 
 #-disc.iso
